@@ -31,6 +31,7 @@ public final class HibernateUtil {
 			props.setProperty("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
 			props.setProperty("hibernate.show_sql", "true");
 			props.setProperty("hibernate.format_sql", "true");
+			props.setProperty("hibernate.hbm2ddl.auto", "update");
 			
 			ServiceRegistry registry = new StandardServiceRegistryBuilder()
 				.applySettings(props)

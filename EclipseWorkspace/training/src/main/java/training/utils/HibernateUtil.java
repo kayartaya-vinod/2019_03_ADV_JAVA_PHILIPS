@@ -8,6 +8,7 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 
 import training.entity.Category;
+import training.entity.Product;
 
 public final class HibernateUtil {
 	private HibernateUtil() {
@@ -38,6 +39,8 @@ public final class HibernateUtil {
 				.build();
 			
 			cfg.addAnnotatedClass(Category.class);
+			cfg.addAnnotatedClass(Product.class);
+			
 			factory = cfg.buildSessionFactory(registry);
 			
 		}

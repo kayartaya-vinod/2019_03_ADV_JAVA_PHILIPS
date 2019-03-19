@@ -26,7 +26,9 @@ public class ProductDao {
 	public List<Product> getProductsByPriceRange(double min, double max) {
 		SessionFactory factory = HibernateUtil.getSessionFactory();
 		Session session = factory.openSession();
-		Query<Product> qry = session.createQuery("from Product where unitPrice betwen :MIN and :MAX", Product.class);
+		Query<Product> qry = session.createQuery(
+				"from Product where unitPrice between :MIN and :MAX order by unitPrice desc", 
+				Product.class);
 		qry.setParameter("MIN", min);
 		qry.setParameter("MAX", max);
 

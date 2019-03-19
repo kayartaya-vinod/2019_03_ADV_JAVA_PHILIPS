@@ -28,7 +28,7 @@
 					<a href="./view-all-products">View all products</a>
 				</p>
 				<p>
-					<a href="">View products by price</a>
+					<a href="./product-form.jsp">View products by price</a>
 				</p>
 			</div>
 

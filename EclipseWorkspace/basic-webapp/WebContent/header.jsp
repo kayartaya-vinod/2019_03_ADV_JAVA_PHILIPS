@@ -20,7 +20,7 @@
 
 
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-3">
 				<p>
 					<a href="./index.jsp">Home</a>
 				</p>
@@ -32,6 +32,6 @@
 				</p>
 			</div>
 
-			<div class="col-md-8">
+			<div class="col-md-9">
 				<!--  end of header.jsp -->
 				

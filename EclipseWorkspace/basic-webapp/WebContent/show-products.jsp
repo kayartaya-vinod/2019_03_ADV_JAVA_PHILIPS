@@ -10,6 +10,7 @@
 <table class="table table-striped table-bordered table-hover">
 	<thead>
 		<tr>	
+		
 			<th>Name</th>
 			<th>Category</th>
 			<th>Quantity per unit</th>

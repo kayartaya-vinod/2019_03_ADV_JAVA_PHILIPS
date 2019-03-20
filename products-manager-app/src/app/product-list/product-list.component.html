@@ -1,0 +1,21 @@
+<h3>Product List here</h3>
+
+<!-- table.table.table-striped.table-hover.table-border>(thead>tr>th*4)+(tbody>tr>td*4) -->
+<table class="table table-striped table-hover table-border">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Quantity per unit</th>
+            <th>Unit Price (USD)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of products" >
+            <td>{{ p.productName }}</td>
+            <td>{{ p.category.categoryName }}</td>
+            <td>{{ p.quantityPerUnit }}</td>
+            <td>{{ p.unitPrice }}</td>
+        </tr>
+    </tbody>
+</table>

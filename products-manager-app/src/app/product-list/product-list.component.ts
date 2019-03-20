@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-const url = 'http://localhost:8080/spring-training/api/products/';
+const url = 'http://localhost:8080/api/products/';
 
 
 @Component({
